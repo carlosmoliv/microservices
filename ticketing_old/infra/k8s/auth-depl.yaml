@@ -15,6 +15,7 @@ spec:
       containers:
         - name: auth
           image: carlosviniciusoliv/auth
+
 ---
 apiVersion: v1
 kind: Service
@@ -26,5 +27,5 @@ spec:
   ports:
     - name: auth
       protocol: TCP
-      port: 3000
-      targetPort: 3000
+      port: 4000
+      targetPort: 4000
