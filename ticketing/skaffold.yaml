@@ -4,11 +4,11 @@ metadata:
   name: ticketing
 build:
   artifacts:
-  - image: carlosviniciusoliv/auth
-    context: auth
-    docker:
-      dockerfile: Dockerfile
+    - image: carlosviniciusoliv/auth
+      context: auth
+      docker:
+        dockerfile: Dockerfile
 deploy:
   kubectl:
     manifests:
-    - Infra/k8s/auth-depl.yaml
+      - Infra/k8s/*
